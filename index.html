@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login y Registro -->
+        <div id="auth">
+            <h2 id="auth-title">Iniciar Sesión</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="toggle-auth">¿No tienes cuenta? <span>Registrarme</span></p>
+        </div>
+
+        <!-- Gestor de Tareas -->
+        <div id="task-manager" style="display: none;">
+            <h2>Gestor de Tareas</h2>
+            <div class="task-input">
+                <input type="text" id="task-title" placeholder="Título de la tarea" required>
+                <textarea id="task-note" placeholder="Nota de la tarea" required></textarea>
+                <input type="file" id="image-input" accept="image/*">
+                <button id="add-task-btn">Agregar Tarea</button>
+                <button id="generate-pdf-btn">Generar PDF</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
